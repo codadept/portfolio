@@ -1,0 +1,74 @@
+/* General styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: normal 16px "Roboto Slab",sans-serif;
+    color: #2b2b2b;
+    background-color: #f9f7f7;
+}
+
+ul,nav{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    opacity: 0.75;
+    color: #fff;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+/* Header styles */
+
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: #112d4e;
+}
+
+.menu-icon div{
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+.menu-icon{
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon:hover{
+    opacity: 0.75;
+}
+
+header nav{
+    display: flex;
+    margin-right: -15px;
+}
+@media (max-width:800px) {
+    header nav{
+        display: none;
+    }
+    .menu-icon{
+        display: inline;
+        position: absolute;
+        right: 20px;
+    }
+}
+
+header nav li{
+    margin: 0 15px;
+}

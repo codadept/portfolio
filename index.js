@@ -7,10 +7,15 @@ app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'/views'));
 
 app.use(express.static(path.join(__dirname,'/public')));
+app.use(express.urlencoded({extended:true}));
+app.use(express.json());
 
 app.get('/',(req,res)=>{
-    const num = Math.floor(Math.random()*100)+1;
-    res.render('home',{rand:num});
+    res.render("home");
+})
+
+app.get("*",(req,res)=>{
+    res.send("The Page doesn't exist. ERROR 404!")
 })
 
 app.listen(PORT,()=>{
