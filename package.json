@@ -1,0 +1,26 @@
+{
+  "name": "developerfolio_codadept",
+  "version": "1.0.0",
+  "description": "This is my developer website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codadept/developerfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Pratik (codadept)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codadept/developerfolio/issues"
+  },
+  "homepage": "https://github.com/codadept/developerfolio#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
