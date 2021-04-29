@@ -74,15 +74,15 @@ header nav li{
     margin: 0 15px;
 }
 
-main{
+.profile{
     position: relative;
     text-align: center;
     min-height: 100vh;
-    color: white;
+    color: black;
     background-color: #fff;
 }
 
-main .background-image{
+.profile .background-image{
     background-image: url("/img/body-background.png");
     position: absolute;
     top: 14%;
@@ -93,7 +93,7 @@ main .background-image{
 }
 
 @media (max-width) {
-    main{
+    .profile{
         min-height: 600px;
     }
     
