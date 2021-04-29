@@ -10,8 +10,12 @@ app.use(express.static(path.join(__dirname,'/public')));
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
-app.get('/',(req,res)=>{
+app.get("/home",(req,res)=>{
     res.render("home");
+})
+
+app.get('/',(req,res)=>{
+    res.redirect("home");
 })
 
 app.get("*",(req,res)=>{
