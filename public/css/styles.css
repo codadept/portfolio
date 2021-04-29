@@ -35,7 +35,8 @@ header{
     justify-content: space-around;
     align-items: center;
     padding: 20px 0px;
-    background-color: #112d4e;
+    background-color: #6C63FF;
+    z-index: 1;
 }
 
 .menu-icon div{
@@ -71,4 +72,29 @@ header nav{
 
 header nav li{
     margin: 0 15px;
+}
+
+main{
+    position: relative;
+    text-align: center;
+    min-height: 100vh;
+    color: white;
+    background-color: #fff;
+}
+
+main .background-image{
+    background-image: url("/img/body-background.png");
+    position: absolute;
+    top: 14%;
+    right: 2%;
+    width: 50rem;
+    height: 50rem;
+    background-size: cover;
+}
+
+@media (max-width) {
+    main{
+        min-height: 600px;
+    }
+    
 }
