@@ -57,17 +57,94 @@ header .nav-header img{
     margin-right: 1.5em;
 }
 
+/* Hamburger icon */
+
+div.ham{
+    display: none;
+    opacity: .75;
+    cursor: pointer;
+}
+
+div.ham:hover{
+    opacity: 1;
+}
+
+div.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+/* Close icon */
+
+.close {
+    position: absolute;
+    right: -100px;
+    top: 12px;
+    width: 28px;
+    height: 28px;
+    opacity: 0.75;
+    z-index: 2;
+    display: none;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #fff;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  
+
 @media (max-width:800px) {
+    header .nav-links li{
+        display: block;
+        margin:15px 10px;
+        padding: 0 10px;
+    }
+
     header .nav-links{
-        display: none;
+        position: absolute;
+        background: #ff8f63;
+        height: 100vh;
+        width: 150px;
+        top: 0;
+        right: -150px;
+        text-align: left;
+        z-index: 2;
+        flex-direction: column;
+        padding-top: 70px;
     }
 
     header{
-        font-size: small;
+        justify-content:space-between;
+        padding:0 20px ;
+    }
+
+    header h1{
+        font-size: 20px;
     }
     header .nav-header img{
-        width: 35px;
-        margin-right: 5%;
+        width: 28px;
+        margin-right: 5px;
+    }
+    div.ham{
+        display: block;
+    }
+
+    .close{
+        display: block;
     }
 }
 
@@ -93,7 +170,7 @@ section.content h1.title{
     top: 15%;
     margin: 1.2em;
     font-size: 5em;
-    z-index: 1;
+    z-index: 0;
 }
 
 section.content h3.desc{
@@ -128,4 +205,10 @@ section.content h1.title .title-desg{
     top: 10%;
     left: 30%;
     z-index: -1;
+}
+
+@media (max-width:800px){
+    section.content{
+        font-size: 10px;
+    }
 }
