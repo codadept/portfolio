@@ -10,6 +10,26 @@ app.use(express.static(path.join(__dirname,'/public')));
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
+app.get("/projects",(req,res)=>{
+    res.render("projects");
+})
+
+app.get("/blogs",(req,res)=>{
+    res.render("blogs");
+})
+
+app.get("/about",(req,res)=>{
+    res.render("about");
+})
+
+app.get("/register",(req,res)=>{
+    res.render("register");
+})
+
+app.get("/login",(req,res)=>{
+    res.render("login")
+})
+
 app.get("/home",(req,res)=>{
     res.render("home");
 })
