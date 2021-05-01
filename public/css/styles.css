@@ -40,6 +40,7 @@ header{
     align-items: center;
     position:fixed ;
     z-index: 1;
+    height: 80px;
 }
 
 header .nav-header,
@@ -193,9 +194,14 @@ section.content h3.desc{
     letter-spacing: 2px;
 }
 
-section.content h3.desc span{
+section.content h3.desc span.nl{
     margin-left: 1em;
     display: block;
+}
+
+section.content h3.desc span.desc-col{
+    color: #6C63FF;
+    font-weight: 900;
 }
 
 section.content h1.title span{
@@ -243,7 +249,7 @@ section.content h1.title .title-desg{
         width: 70%;
         margin: auto;
         padding-top: 20px;
-        font-size: 4em;
+        font-size: 7em;
     }
     section.content h1.title .title-desg{
         position: absolute;
@@ -256,6 +262,18 @@ section.content h1.title .title-desg{
         width: 90%;
         position: relative;
         margin: 50px auto;
+        font-size: 3em;
+        text-align: center;
+    }
+}
+
+@media (max-width:450px){
+    section.content h1.title{
+        font-size: 5em;
+        padding:50px 0;
+    }    
+    section.content h3.desc{
+        font-size: 2em;
     }
 }
 
@@ -266,4 +284,108 @@ section.content h1.title .title-desg{
     section.content h1.title{
         font-size: 6em;
     }
+}
+
+/* About section styling */
+
+section.about{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+section.about .heading{
+    margin: 4%;
+}
+
+section.about .heading h1{
+    font-size: 4em;
+    position:relative;
+    font-weight: 400;
+}
+
+section.about .heading .heading-desg{
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    background-color: #6C63FF;
+    position: absolute;
+    left: 45%;
+    top:106%;
+    z-index: -1;
+}
+
+section.about .heading h3{
+    font-size: 6em;
+    -webkit-text-stroke: 1px #6C63FF;
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 106%;
+    left: 8%;
+    z-index: -1;
+    letter-spacing: 20px;
+}
+
+section.about .content{
+    margin: 0 3%;
+    display: flex;
+    font-size: 1.3em;
+}
+
+section.about .content .about-content{
+    width: 60%;
+    padding: 20px;
+}
+
+section.about .content .skills{
+    width: 40%;
+    padding: 20px;
+    border: 1px solid #6C63FF;
+    border-radius: 5px;
+    box-shadow:1px 2px 10px#d6d6d6;
+}
+
+section.about .content .skills h1{
+    padding: 10px;
+}
+
+section.about .content .skills .skill-table{
+    display: flex;
+}
+
+section.about .content .skills .skill-table .skill-name{
+    width: 50%;
+}
+
+section.about .content .skills .skill-table .skill-name h3{
+    font-weight: 400;
+    padding: 10px;
+}
+
+section.about .content .skills .skill-table .skill-bar{
+    width: 50%;
+}
+
+section.about .content .skills .skill-table .skill-bar div{
+    height: 26px;
+    margin: 20px 0;
+    background-color: #6C63FF;
+    border-radius: 4px;
+}
+
+#cp{
+    width: 30%;
+}
+
+#webd{
+    width: 70%;
+}
+
+#ml{
+    width: 40%;
+}
+
+section.about .content .about-content .connect{
+    display: flex;
+    align-items: center;
 }
