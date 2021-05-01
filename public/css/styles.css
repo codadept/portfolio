@@ -314,6 +314,12 @@ section.about .heading .heading-desg{
     z-index: -1;
 }
 
+@media (max-width:1675px){
+    section.about .heading .heading-desg{
+        left: 50%;
+    }
+}
+
 section.about .heading h3{
     font-size: 6em;
     -webkit-text-stroke: 1px #6C63FF;
@@ -354,7 +360,8 @@ section.about .content .skills .skill-table{
 }
 
 section.about .content .skills .skill-table .skill-name{
-    width: 50%;
+    width: 70%;
+    font-size: 0.9em;
 }
 
 section.about .content .skills .skill-table .skill-name h3{
@@ -363,7 +370,7 @@ section.about .content .skills .skill-table .skill-name h3{
 }
 
 section.about .content .skills .skill-table .skill-bar{
-    width: 50%;
+    width: 30%;
 }
 
 section.about .content .skills .skill-table .skill-bar div{
@@ -387,5 +394,131 @@ section.about .content .skills .skill-table .skill-bar div{
 
 section.about .content .about-content .connect{
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+section.about .content .about-content .connect h2{
+    font-size: 1em;
+}
+
+section.about .content p{
+    text-align: justify;
+}
+
+@media(max-width:1400px){
+    section.about .heading .heading-desg{
+        left: 65%;
+    }
+    section.about .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    section.about .content .about-content,
+    section.about .content .skills{
+        width: 80%;
+    }
+    section.about .content .skills .skill-table .skill-name,
+    section.about .content .skills .skill-table .skill-bar{
+        width: 50%;
+    }
+}
+
+@media (max-width:950px){
+    section.about .heading{
+        font-size: .6em;
+    }
+    section.about .heading h3{
+        top:104%;
+    }
+    section.about .heading .heading-desg{
+        top: 104%;
+    }
+    section.about .content .about-content .connect{
+        flex-direction: column;
+    }
+    .connect-btn{
+        width: 200px;
+        font-size: 0.6em;
+    }
+    section.about .content p{
+        font-size: .8em;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+    section.about .content .about-content .connect h2{
+        font-size: 0.8em;
+    }
+    section.about .content .skills h1{
+        font-size: 1em;
+    }
+    section.about .content .skills .skill-table .skill-name{
+        font-size: .6em;
+    }section.about .content .skills .skill-table .skill-bar div{
+        margin: 10px 0;
+    }
+}
+
+@media (max-width:600px){
+    section.about .content .skills .skill-table .skill-bar{
+        width: 30%;
+    }
+    section.about .content .skills .skill-table .skill-name{
+        width: 70%;
+        font-size: 0.5em;
+    }
+    section.about .content .skills .skill-table .skill-bar div{
+        height: 22px;
+    }    
+    section.about .heading{
+        font-size: .4em;
+    }
+    section.about .heading h3{
+        top:102%;
+    }
+    section.about .heading .heading-desg{
+        top: 102%;
+        left: 70%;
+    }
+}
+
+
+/* Footer Styles */
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: #999999;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+footer span{
+    font-size: 1.1em;
+}
+
+footer .foot-links{
+    display: flex;
+}
+
+footer .foot-links li{
+    padding: 20px;
+}
+
+@media (max-width:950px){
+    footer{
+        height: 200px;
+        font-size: 1em;
+        letter-spacing: 1.5px;
+    }
+    footer .foot-links,footer{
+        flex-direction: column;
+    }
+
+    footer .foot-links li{
+        padding: 5px;
+    }
+
 }
