@@ -156,6 +156,66 @@ div.hamburger {
 /* Content section styling */
 
 section.content{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding-top: 100px;
+}
+
+section.content .content-text{
+    width: 35%;
+    padding: 100px;
+    padding-right: 0;
+    margin: auto;
+}
+section.content .content-img{
+    position: relative;
+    width: 65%;
+}
+
+section.content .content-img img{
+    width: 100%;
+    margin-top:50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.content .content-text h1{
+    font-size: 5.5em;
+    position: relative;
+    padding-bottom: 50px;
+    letter-spacing: 3px;
+}
+
+section.content .content-text .desc{
+    width: 100%;
+    padding-right: 0;
+}
+
+section.content .content-text h1 .title-desg{
+    width: 2.2em;
+    height: 2.2em;
+    background-color: #6C63FF;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    z-index: -1;
+}
+
+section.content .content-text h3{
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+.desc-col{
+    color: #6C63FF;
+    font-weight: 900;  
+}
+
+/* section.content{
     min-height: 100vh;
     width: 100%;
     position: relative;
@@ -284,7 +344,7 @@ section.content h1.title .title-desg{
     section.content h1.title{
         font-size: 6em;
     }
-}
+} */
 
 /* About section styling */
 
@@ -310,13 +370,16 @@ section.about .heading .heading-desg{
     background-color: #6C63FF;
     position: absolute;
     left: 45%;
-    top:106%;
+    top:108%;
     z-index: -1;
 }
 
 @media (max-width:1675px){
     section.about .heading .heading-desg{
         left: 50%;
+    }
+    section.about .heading h3{
+        top: 104%;
     }
 }
 
@@ -326,7 +389,7 @@ section.about .heading h3{
     color: white;
     opacity: 0.5;
     position: absolute;
-    top: 106%;
+    top: 108%;
     left: 8%;
     z-index: -1;
     letter-spacing: 20px;

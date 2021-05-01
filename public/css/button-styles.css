@@ -32,11 +32,11 @@
 	margin: 0 0 2em;
 	max-width: 200px;
 	position: absolute;
-	top: 90%;
+	top: 75%;
+	right: 40%;
 	text-decoration: none;
 	width: 100%;
 	font-weight: 400;
-	align-self: center;
 }
 
 @media (min-width: 600px) {
