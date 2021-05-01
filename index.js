@@ -1,4 +1,5 @@
 const express = require("express");
+const { reset } = require("nodemon");
 const app = express();
 const path =  require('path');
 const PORT = process.env.PORT || 3000;
@@ -22,16 +23,16 @@ app.get("/about",(req,res)=>{
     res.render("about");
 })
 
-app.get("/register",(req,res)=>{
-    res.render("register");
-})
-
-app.get("/login",(req,res)=>{
-    res.render("login")
-})
-
 app.get("/home",(req,res)=>{
     res.render("home");
+})
+
+app.get("/achievements",(req,res)=>{
+    res.render("achievements")
+})
+
+app.get("/contact",(req,res)=>{
+    res.render("contact")
 })
 
 app.get('/',(req,res)=>{
