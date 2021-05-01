@@ -161,11 +161,17 @@ section.content{
     background-image: linear-gradient(45deg, rgb(212, 212, 212),white);
 }
 
-section.content img{
-    width: 70%;
+section.content .content-img{
     position: absolute;
     right: 0;
     top: 15%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.content img{
+    width: 100%;
 }
 
 section.content h1.title{
@@ -211,26 +217,38 @@ section.content h1.title .title-desg{
     z-index: -1;
 }
 
+@media (max-width:1060px) {
+    section.content h1.title{
+        font-size: 3.5em;
+    }
+}
+
 @media (max-width:800px){
     section.content{
         font-size: 10px;
     }
-    section.content img{
-        position: static;
+    section.content .content-img{
+        position: relative;
         width: 100%;
         margin: auto;
         padding-top: 50px;
+    }
+    .resume-button{
+        bottom: 0;
+        font-size: 20px;
+        max-width: 100px;
     }
     section.content h1.title{
         position: relative;
         width: 70%;
         margin: auto;
+        padding-top: 20px;
         font-size: 4em;
     }
     section.content h1.title .title-desg{
         position: absolute;
         left: 40%;
-        top: 20%;
+        top: 30%;
         width: 2em;
         height: 2em;
     }
@@ -238,5 +256,14 @@ section.content h1.title .title-desg{
         width: 90%;
         position: relative;
         margin: 50px auto;
+    }
+}
+
+@media (min-width:1600px){
+    section.content h3.desc{
+        margin-left: 100px;
+    }
+    section.content h1.title{
+        font-size: 6em;
     }
 }
