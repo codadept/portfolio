@@ -21,3 +21,54 @@
 #btnScrollToTop:active{
 	background: #ff8f63;
 }
+
+.resume-button{
+	text-align: center;
+	color: rgb(51, 45, 45);
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 45px;
+	margin: 0 0 2em;
+	max-width: 200px;
+	position: absolute;
+	top: 90%;
+	text-decoration: none;
+	width: 100%;
+	font-weight: 400;
+	align-self: center;
+}
+
+@media (min-width: 600px) {
+	.resume-button {
+		margin: 0 1em 2em;
+   }
+}
+.resume-button:hover {
+	text-decoration: none;
+	background: rgba(225, 51, 45, 0);
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+.resume-button svg {
+	height: 50px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.resume-button rect {
+	fill: none;
+	stroke: rgb(77, 72, 72);
+	stroke-width: 2;
+	stroke-dasharray: 422, 0;
+	transition: all 0.35s linear;
+}
+
+.resume-button:hover rect {
+	stroke-width: 5;
+	stroke-dasharray: 15, 310;
+	stroke-dashoffset: 48;
+	transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
