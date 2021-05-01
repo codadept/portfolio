@@ -9,7 +9,7 @@
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	background: #e62739;
+	background: #ff8f63;
 	box-shadow: 0 0 10px rgba(0,0,0,0.25);
 	outline: none;
 	color: #ffffff;
@@ -19,5 +19,5 @@
 }
 
 #btnScrollToTop:active{
-	background: #cc2333;
+	background: #ff8f63;
 }
