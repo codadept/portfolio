@@ -1,0 +1,221 @@
+/* Contacts styling */
+
+section.contact{
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+section.contact .contact-details{
+    display: flex;
+}
+
+section.contact .contact-details .socials,
+section.contact .contact-details .contact-img{
+    width: 50%;
+}
+
+section.contact .contact-details .contact-img img{
+    width: 100%;
+}
+
+section.contact .contact-details .socials{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: smaller;
+}
+
+section.contact .text{
+    position: relative;
+}
+
+section.contact .text p{
+    font-size: 1.8em;
+    margin-left: 20px;
+}
+
+section.contact .text h1{
+    font-size: 5.5em;
+    margin-bottom: 40px;
+}
+
+section.contact .contact-details .socials .more-contact{
+    display: flex;
+}
+
+section.contact .contact-details .socials .more-contact a{
+    font-size: 1em;
+    color: #2c2c2c;
+    border: 2px solid #6C63FF;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+section.contact .text h3{
+    font-size: 7em;
+    -webkit-text-stroke: 1px #6C63FF;
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+section.contact .text .desg{
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    background-color: #6C63FF;
+    position: absolute;
+    right: 20%;
+    top:0;
+    z-index: -1;
+}
+
+
+section.contact .contact-details .socials a{
+    width: 50%;
+    font-size: 1.5em;
+    color: #3a3a3a;
+    border: 2px solid #6C63FF;
+    margin: 16px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.linkedin{
+    background: url("/img/linkedin.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+}
+.twitter{
+    background: url("/img/twitter.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+}
+.instagram{
+    background: url("/img/instagram.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+}
+.facebook{
+    background: url("/img/facebook.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+}
+
+.call{
+    background: url("/img/phone-call.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+}
+
+.email{
+    background: url("/img/email.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+}
+
+.location{
+    background: url("/img/pin.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+}
+
+@media(min-width:1600px){
+    section.contact .contact-details .socials{
+        font-size: initial;
+    }
+    section.contact .contact-details .socials a{
+        width: 55%;
+        font-size: 2em;
+        padding-left: 60px;
+    }
+    .facebook,.linkedin,.twitter,.instagram{
+        background-size: 40px;
+    }
+}
+
+@media(max-width:1500px){
+    section.contact .contact-details .socials{
+        font-size: 0.6em;
+    }
+    section.contact .contact-details .socials .more-contact{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    section.contact .contact-details .socials .more-contact a{
+        margin: 5px 20px;
+        width: 40%;
+    }
+    section.contact .contact-details .socials a{
+        margin: 5px 20px;
+    }
+}
+
+@media(max-width:1024px){
+    section.contact .contact-details{
+        flex-direction: column;
+    }
+    section.contact .contact-details .socials,
+    section.contact .contact-details .contact-img{
+        width: 100%;
+    }
+    section.contact .contact-details .contact-img{
+        display: flex;
+        justify-content: center;
+    }
+    section.contact .contact-details .contact-img img{
+        width: 50%;
+        margin: auto;
+    }section.contact .contact-details .socials .more-contact{
+        flex-direction: row;
+    }section.contact .contact-details .socials a{
+        align-self: center;
+    }section.contact .text .desg{
+        right: 40%;
+    }section.contact .text h1{
+        margin-bottom: 20px;
+    }section.contact .text{
+        margin-bottom: 40px;
+    }section.contact .text p{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:700px){
+    section.contact .contact-details .socials{
+        font-size: 0.4em;
+    }.facebook,.linkedin,.twitter,.instagram{
+        background-size: 20px;
+    }section.contact .contact-details .socials .more-contact{
+        flex-direction: column;
+    }section.contact .text .desg{
+        right: 35%;
+    }section.contact .contact-details .contact-img img{
+        width: 70%;
+    }section.contact .contact-details .socials .more-contact a{
+        width: 55%;
+    }section.contact .contact-details .socials a{
+        width: 60%;
+    }
+}
