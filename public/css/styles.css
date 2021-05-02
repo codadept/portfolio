@@ -156,135 +156,126 @@ div.hamburger {
 /* Content section styling */
 
 section.content{
-    min-height: 100vh;
     width: 100%;
-    position: relative;
-    background-image: linear-gradient(45deg, rgb(212, 212, 212),white);
+    min-height: 100vh;
+    display: flex;
+    padding-top: 100px;
 }
 
+section.content .content-text{
+    width: 35%;
+    padding: 100px;
+    padding-right: 0;
+    margin: auto;
+}
 section.content .content-img{
-    position: absolute;
-    right: 0;
-    top: 15%;
-    width: 70%;
+    position: relative;
+    width: 65%;
+}
+
+section.content .content-img img{
+    width: 100%;
+    margin-top:50px;
+    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-section.content img{
+section.content .content-text h1{
+    font-size: 5.5em;
+    position: relative;
+    padding-bottom: 50px;
+    letter-spacing: 3px;
+}
+
+section.content .content-text .desc{
     width: 100%;
+    padding-right: 0;
 }
 
-section.content h1.title{
-    width: 40%;
-    position: absolute;
-    top: 15%;
-    margin: 1.2em;
-    font-size: 5em;
-    z-index: 0;
-}
-
-section.content h3.desc{
-    width: 60%;
-    position: absolute;
-    top: 70%;
-    margin: 1.2em;
-    font-size: 1.8em;
-    font-weight: 300;
-    letter-spacing: 2px;
-}
-
-section.content h3.desc span.nl{
-    margin-left: 1em;
-    display: block;
-}
-
-section.content h3.desc span.desc-col{
-    color: #6C63FF;
-    font-weight: 900;
-}
-
-section.content h1.title span{
-    display: block;
-}
-
-section.content h1.title span:nth-of-type(1){
-    color: #6C63FF;
-}
-
-section.content h1.title .title-desg{
-    width: 2.5em;
-    height: 2.5em;
+section.content .content-text h1 .title-desg{
+    width: 2.2em;
+    height: 2.2em;
     background-color: #6C63FF;
     border-radius: 50%;
     position: absolute;
     top: 10%;
-    left: 30%;
+    left: 40%;
     z-index: -1;
 }
 
-@media (max-width:1060px) {
-    section.content h1.title{
-        font-size: 3.5em;
-    }
+section.content .content-text h3{
+    font-size: 1.6em;
+    font-weight: 400;
 }
 
-@media (max-width:800px){
+.highlight{
+    color:#6C63FF;
+}
+
+.desc-col{
+    color: #6C63FF;
+    font-weight: 900;  
+}
+
+@media(max-width:1250px){
+   section.content .content-text{
+       font-size: 0.8em;
+   }
+   .resume-button{
+       font-size: 1.2em;
+       top:65%;
+       right:30%;
+   }
+}
+
+@media (max-width:1000px){
     section.content{
-        font-size: 10px;
+        flex-direction: column;
+        font-size: 0.8em;
+        align-items: center;
+    }
+    section.content .content-text{
+        padding: 0;
+        margin: 20px auto;
     }
     section.content .content-img{
-        position: relative;
-        width: 100%;
-        margin: auto;
-        padding-top: 50px;
+        margin: 10px auto;
+    }
+    section.content .content-img img{
+        margin: 0;
     }
     .resume-button{
-        bottom: 0;
-        font-size: 20px;
-        max-width: 100px;
+        top: 90%;
+        left: auto;
     }
-    section.content h1.title{
-        position: relative;
-        width: 70%;
-        margin: auto;
-        padding-top: 20px;
-        font-size: 7em;
+}
+
+@media (max-width:550px){
+    section.content{
+        font-size: 0.6em;
     }
-    section.content h1.title .title-desg{
-        position: absolute;
-        left: 40%;
-        top: 30%;
-        width: 2em;
-        height: 2em;
-    }
-    section.content h3.desc{
-        width: 90%;
-        position: relative;
-        margin: 50px auto;
-        font-size: 3em;
+    section.content .content-text{
+        width: 100%;
         text-align: center;
     }
-}
-
-@media (max-width:450px){
-    section.content h1.title{
-        font-size: 5em;
-        padding:50px 0;
-    }    
-    section.content h3.desc{
-        font-size: 2em;
+    section.content .content-img{
+        width: 100%;
+    }
+    section.content .content-img img{
+        width: 100%;
+    }
+    .resume-button{
+        max-width: 100px;
+        font-size: 1em;
+        right: 38%;
+    }
+    section.content .content-text h1 .title-desg{
+        left: 50%;
     }
 }
 
-@media (min-width:1600px){
-    section.content h3.desc{
-        margin-left: 100px;
-    }
-    section.content h1.title{
-        font-size: 6em;
-    }
-}
 
 /* About section styling */
 
@@ -310,13 +301,16 @@ section.about .heading .heading-desg{
     background-color: #6C63FF;
     position: absolute;
     left: 45%;
-    top:106%;
+    top:108%;
     z-index: -1;
 }
 
 @media (max-width:1675px){
     section.about .heading .heading-desg{
         left: 50%;
+    }
+    section.about .heading h3{
+        top: 104%;
     }
 }
 
@@ -326,7 +320,7 @@ section.about .heading h3{
     color: white;
     opacity: 0.5;
     position: absolute;
-    top: 106%;
+    top: 108%;
     left: 8%;
     z-index: -1;
     letter-spacing: 20px;
