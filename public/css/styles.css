@@ -210,6 +210,10 @@ section.content .content-text h3{
     font-weight: 400;
 }
 
+.highlight{
+    color:#6C63FF;
+}
+
 .desc-col{
     color: #6C63FF;
     font-weight: 900;  
