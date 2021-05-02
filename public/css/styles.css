@@ -720,5 +720,9 @@ section.contact .contact-details .socials a{
         right: 35%;
     }section.contact .contact-details .contact-img img{
         width: 70%;
+    }section.contact .contact-details .socials .more-contact a{
+        width: 55%;
+    }section.contact .contact-details .socials a{
+        width: 60%;
     }
 }
