@@ -29,7 +29,11 @@ section.contact .contact-details .socials{
 
 section.contact .text{
     position: relative;
-    margin-bottom: 40px;
+}
+
+section.contact .text p{
+    font-size: 1.8em;
+    margin-left: 20px;
 }
 
 section.contact .text h1{
@@ -72,9 +76,6 @@ section.contact .text .desg{
     z-index: -1;
 }
 
-section.contact .contact-details .socials a img{
-    width: 50px;
-}
 
 section.contact .contact-details .socials a{
     width: 50%;
@@ -192,6 +193,12 @@ section.contact .contact-details .socials a{
         align-self: center;
     }section.contact .text .desg{
         right: 40%;
+    }section.contact .text h1{
+        margin-bottom: 20px;
+    }section.contact .text{
+        margin-bottom: 40px;
+    }section.contact .text p{
+        margin-bottom: 10px;
     }
 }
 
