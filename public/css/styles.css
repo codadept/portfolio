@@ -286,6 +286,7 @@ section.about{
 
 section.about .heading{
     margin: 4%;
+    position: relative;
 }
 
 section.about .heading h1{
@@ -301,16 +302,13 @@ section.about .heading .heading-desg{
     background-color: #6C63FF;
     position: absolute;
     left: 45%;
-    top:108%;
+    top:0;
     z-index: -1;
 }
 
 @media (max-width:1675px){
     section.about .heading .heading-desg{
         left: 50%;
-    }
-    section.about .heading h3{
-        top: 104%;
     }
 }
 
@@ -320,7 +318,7 @@ section.about .heading h3{
     color: white;
     opacity: 0.5;
     position: absolute;
-    top: 108%;
+    top: 0;
     left: 8%;
     z-index: -1;
     letter-spacing: 20px;
@@ -422,12 +420,6 @@ section.about .content p{
     section.about .heading{
         font-size: .6em;
     }
-    section.about .heading h3{
-        top:104%;
-    }
-    section.about .heading .heading-desg{
-        top: 104%;
-    }
     section.about .content .about-content .connect{
         flex-direction: column;
     }
@@ -467,11 +459,7 @@ section.about .content p{
     section.about .heading{
         font-size: .4em;
     }
-    section.about .heading h3{
-        top:102%;
-    }
     section.about .heading .heading-desg{
-        top: 102%;
         left: 70%;
     }
 }
