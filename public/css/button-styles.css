@@ -22,23 +22,25 @@
 	background: #ff8f63;
 }
 
-.resume-button{
-	text-align: center;
-	color: rgb(51, 45, 45);
+/* ============================== */
+.resume-button {
+	color: #000;
 	cursor: pointer;
-	font-size: 30px;
-	font-weight: 700;
+	font-size: 16px;
+	font-weight: 400;
 	line-height: 45px;
 	margin: 0 0 2em;
-	max-width: 200px;
+	max-width: 160px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+	border: 1px solid;
+	overflow: hidden;
 	position: absolute;
 	top: 75%;
 	right: 40%;
-	text-decoration: none;
-	width: 100%;
-	font-weight: 400;
+	text-align: center;
 }
-
 @media (min-width: 600px) {
 	.resume-button {
 		margin: 0 1em 2em;
@@ -46,33 +48,29 @@
 }
 .resume-button:hover {
 	text-decoration: none;
-	background: rgba(225, 51, 45, 0);
-	font-weight: 900;
-	letter-spacing: 1px;
 }
 
-.resume-button svg {
-	height: 50px;
-	left: 0;
+.resume-button span{
+	z-index: 20;
+}
+.resume-button:after {
+	background: #6C63FF;
+	content: "";
+	height: 155px;
+	left: -75px;
+	opacity: 0.2;
 	position: absolute;
-	top: 0;
-	width: 100%;
+	top: -50px;
+	transform: rotate(35deg);
+	transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+	width: 50px;
+	z-index: -10;
 }
-.resume-button rect {
-	fill: none;
-	stroke: #6C63FF;
-	stroke-width: 2;
-	stroke-dasharray: 422, 0;
-	transition: all 0.35s linear;
+.resume-button:hover:after {
+	left: 120%;
+	transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-
-.resume-button:hover rect {
-	stroke-width: 5;
-	stroke-dasharray: 15, 310;
-	stroke-dashoffset: 48;
-	transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
+/* ============================== */
 .connect-btn{
 	background-color: transparent;
 	border: 2px solid #6C63FF;
