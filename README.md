@@ -1,6 +1,6 @@
 # Developerfolio 🤩 [![Website](https://img.shields.io/website?down_message=offline&style=for-the-badge&up_message=online&url=https%3A%2F%2Fcodadept.herokuapp.com)](https://codadept.herokuapp.com)
 
-## My very own personal website. Basically this is just a résumé. 🤠
+### My very own personal website. Basically this is just a résumé. 🤠
 
 <br>
 
@@ -14,6 +14,8 @@
     <img src="https://github.com/codadept/developerfolio/blob/master/public/gifs/codadept.gif" alt="Developerfolio" width="600px" />
     <br>
 </h2>
+
+### Checkout my [website](https://codadept.herokuapp.com)
 
 ## Features 🎊
 - Fully responsive
@@ -70,11 +72,11 @@ Once your server has started, go to this url `http://localhost:3000/` and you wi
 
 ## Technologies used ⚙
 
-- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/html.svg" alt="html" width="50px"> HTML5
-- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/css.svg" alt="css" width="50px"> CSS3
-- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/javascript.svg" alt="js" width="50px"> JavaScript
-- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/nodejs.svg" alt="nodejs" width="50px"> Node.js
-- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/expressjs.svg" alt="expressjs" width="50px"> Express.js
+- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/html.svg" alt="html" width="25px"> HTML5
+- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/css.svg" alt="css" width="25px"> CSS3
+- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/javascript.svg" alt="js" width="25px"> JavaScript
+- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/nodejs.svg" alt="nodejs" width="25px"> Node.js
+- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/expressjs.svg" alt="expressjs" width="25px"> Express.js
 
 ## Authors 👨
 
