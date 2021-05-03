@@ -41,20 +41,6 @@ section.contact .text h1{
     margin-bottom: 40px;
 }
 
-section.contact .contact-details .socials .more-contact{
-    display: flex;
-}
-
-section.contact .contact-details .socials .more-contact a{
-    font-size: 1em;
-    color: #2c2c2c;
-    border: 2px solid #6C63FF;
-    margin: 20px;
-    border-radius: 10px;
-    padding: 10px;
-    padding-left: 40px;
-}
-
 section.contact .text h3{
     font-size: 7em;
     -webkit-text-stroke: 1px #6C63FF;
@@ -159,14 +145,6 @@ section.contact .contact-details .socials a{
     section.contact .contact-details .socials{
         font-size: 0.6em;
     }
-    section.contact .contact-details .socials .more-contact{
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    section.contact .contact-details .socials .more-contact a{
-        margin: 5px 20px;
-        width: 40%;
-    }
     section.contact .contact-details .socials a{
         margin: 5px 20px;
     }
@@ -187,8 +165,6 @@ section.contact .contact-details .socials a{
     section.contact .contact-details .contact-img img{
         width: 50%;
         margin: auto;
-    }section.contact .contact-details .socials .more-contact{
-        flex-direction: row;
     }section.contact .contact-details .socials a{
         align-self: center;
     }section.contact .text .desg{
@@ -207,15 +183,122 @@ section.contact .contact-details .socials a{
         font-size: 0.4em;
     }.facebook,.linkedin,.twitter,.instagram{
         background-size: 20px;
-    }section.contact .contact-details .socials .more-contact{
-        flex-direction: column;
     }section.contact .text .desg{
         right: 35%;
     }section.contact .contact-details .contact-img img{
         width: 70%;
-    }section.contact .contact-details .socials .more-contact a{
-        width: 55%;
     }section.contact .contact-details .socials a{
         width: 60%;
+    }
+}
+
+/* Contact me section */
+
+section.contact-me{
+    width: 100%;
+}
+
+section.contact-me .send-email .more-contact .contact-info{
+    display: flex;
+    justify-content: center;
+}
+
+
+section.contact-me .send-email .more-contact .contact-info a{
+    font-size: 0.7em;
+    color: #2c2c2c;
+    border: 2px solid #6C63FF;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+section.contact-me .send-email{
+    display: flex;
+}
+
+section.contact-me .send-email .email-form,
+section.contact-me .send-email .more-contact{
+    width: 50%;
+    padding: 10px;
+    margin: 40px;
+    height: min-content;
+}
+
+section.contact-me .send-email form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+::placeholder{
+    color: #6C63FF;
+    font-size: 1.2em;
+    opacity: 0.6;
+}
+
+textarea{
+    font-family: "Roboto Slab",sans-serif;
+}
+
+section.contact-me .send-email form input{
+    height: 40px;
+}
+
+section.contact-me .send-email .email-form{
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgb(172, 172, 172);
+}
+
+.map iframe{
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+section.contact-me .send-email form input,
+section.contact-me .send-email form textarea,
+section.contact-me .send-email form button{
+    border-radius: 5px;
+    border: none;
+    background-color: #eeedfd;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+section.contact-me .send-email form button{
+    font-size: 1.2em;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+section.contact-me .send-email form button:hover{
+    opacity: 1;
+}
+
+section.contact-me .send-email .email-form h1{
+    font-size: 2em;
+}
+
+@media(max-width:1024px){
+    section.contact-me .send-email{
+        flex-direction: column;
+        align-items: center;
+    }
+    section.contact-me .send-email .email-form,
+    section.contact-me .send-email .more-contact{
+        width: 80%;
+    }
+}
+
+@media (max-width:700px){
+    section.contact-me .send-email .more-contact .contact-info{
+        flex-direction: column;
+        align-items: center;
+    }section.contact-me .send-email .more-contact .contact-info a{
+        margin: 10px;
+        width: 80%;
     }
 }

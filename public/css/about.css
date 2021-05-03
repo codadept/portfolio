@@ -31,7 +31,7 @@ section.about .about-content .about-text{
 
 section.about .heading{
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 section.about .heading h1{
@@ -55,13 +55,14 @@ section.about .heading .desg{
     border-radius: 50%;
     background-color: #6C63FF;
     position: absolute;
-    right: 10%;
+    right: 20%;
     top:0;
     z-index: -1;
 }
 
 section.about .main p{
     font-size: 1.2em;
+    text-align: justify;
 }
 
 section.about .tech h4{
@@ -99,5 +100,37 @@ section.about .tech .tech-container .tech-name{
 @media(min-width:1600px){
     section.about .about-content .about-text{
         font-size: initial;
+    }
+}
+
+@media(max-width:1300px){
+    section.about .tech .tech-container .tech-name{
+        font-size: 1em;
+    }section.about .tech .tech-container .tech-icons{
+        width: 40px;
+        height: 40px;
+    }section.about .tech .tech-container .tech-value{
+        padding:15px;
+    }
+}
+
+@media(max-width:800px){
+    section.about .about-content{
+        flex-direction: column;
+    }section.about .about-content .about-img,
+    section.about .about-content .about-text{
+        width: 100%;
+    }section.about .about-content .about-text{
+        font-size: 0.6em;
+    }section.about .heading{
+        margin-bottom: 0;
+    }section.about .heading .desg{
+        right: 30%;
+    }
+}
+
+@media(max-width:600px){
+    section.about .heading{
+        font-size: 0.6em;
     }
 }
