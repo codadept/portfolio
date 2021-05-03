@@ -300,5 +300,17 @@ section.contact-me .send-email .email-form h1{
     }section.contact-me .send-email .more-contact .contact-info a{
         margin: 10px;
         width: 80%;
+    }section.contact-me .send-email form{
+        font-size: .7em;
+    }::placeholder{
+        font-size: .7em;
+    }section.contact-me .send-email form button{
+        font-size: 1.2em;
+    }section.contact-me .send-email .more-contact h2{
+        font-size: 1em;
+    }section.contact-me .send-email form input,
+    section.contact-me .send-email form textarea,
+    section.contact-me .send-email form button{
+        padding:10px;
     }
 }
