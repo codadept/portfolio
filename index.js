@@ -1,8 +1,11 @@
+require("dotenv").config();
+
 const express = require("express");
 const { reset } = require("nodemon");
 const app = express();
 const path =  require('path');
 const PORT = process.env.PORT || 3000;
+const gmailPass = process.env.GMAIL_APP_PASSWORD;
 
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'/views'));
@@ -32,7 +35,7 @@ app.get("/achievements",(req,res)=>{
 })
 
 app.get("/contact",(req,res)=>{
-    res.render("contact")
+    res.render("contact",{gmailPass})
 })
 
 app.get('/',(req,res)=>{

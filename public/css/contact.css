@@ -239,6 +239,7 @@ section.contact-me .send-email form{
 }
 
 textarea{
+    resize: vertical;
     font-family: "Roboto Slab",sans-serif;
 }
 
@@ -311,5 +312,41 @@ section.contact-me .send-email .email-form h1{
     section.contact-me .send-email form textarea,
     section.contact-me .send-email form button{
         padding:10px;
+    }
+}
+
+#status{
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 20px;
+    display: none;
+}
+
+#status.success{
+    display: block;
+    background-color: rgb(132, 255, 128);
+    animation: status 4s ease forwards;
+}
+
+#status.error{
+    display: block;
+    background-color: rgb(250,129,92);
+    color: white;
+}
+
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
     }
 }
