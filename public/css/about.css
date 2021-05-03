@@ -55,13 +55,14 @@ section.about .heading .desg{
     border-radius: 50%;
     background-color: #6C63FF;
     position: absolute;
-    right: 10%;
+    right: 20%;
     top:0;
     z-index: -1;
 }
 
 section.about .main p{
     font-size: 1.2em;
+    text-align: justify;
 }
 
 section.about .tech h4{
