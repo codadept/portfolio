@@ -245,3 +245,125 @@ section.education .edu-container .institutes .inst-container .inst-details a{
         font-size: 0.6em;
     }
 }
+
+/* Certificates section */
+
+section.cert{
+    width: 100%;
+}
+
+section.cert .heading{
+    position: relative;
+    margin-bottom: 20px;
+    width: max-content;
+}
+
+section.cert .heading h1{
+    font-size: 4em;
+    margin-bottom: 40px;
+}
+
+section.cert .heading h3{
+    font-size: 5em;
+    -webkit-text-stroke: 1px #6C63FF;
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+section.cert .heading .desg{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: #6C63FF;
+    position: absolute;
+    right: 0;
+    top:0;
+    z-index: -1;
+}
+
+section.cert .certificates{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 30px;
+}
+
+section.cert .certificates .cert-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.cert .certificates .cert-body .cert-container{
+    display: flex;
+    flex-direction: row;
+    height: 230px;
+    width: 500px;
+    box-shadow: 2px 2px 10px rgb(182, 181, 181);
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+}
+
+section.cert .certificates .cert-body .cert-container .cert-details,
+section.cert .certificates .cert-body .cert-container .cert-img{
+    width: 50%;
+}
+
+section.cert .certificates .cert-body .cert-container .cert-img img{
+    width: 100%;
+}
+
+section.cert .certificates .cert-body .cert-container .cert-details h5{
+    font-size: 2em;
+}
+
+section.cert .certificates .cert-body .cert-container .cert-details a{
+    font-size: 1.5em;
+    color: rgb(100, 100, 100);
+}
+
+@media(max-width:1600px){
+    section.cert .heading{
+        font-size: smaller;
+    }
+    section.cert .certificates .cert-body .cert-container .cert-details{
+        font-size: smaller;
+    }
+}
+
+@media(max-width:800px){
+    section.cert .heading{
+        font-size: 0.7em;
+    }
+    section.cert .certificates .cert-body .cert-container{
+        height: 200px;
+    }
+    section.cert .certificates .cert-body .cert-container .cert-details{
+        font-size: 0.7em;
+    }
+}
+
+@media(max-width:600px){ 
+    section.cert .certificates .cert-body .cert-container{
+        height: 150px;
+    }
+    section.cert .certificates .cert-body .cert-container .cert-details{
+        font-size: 0.5em;
+    }
+    section.cert .heading{
+        font-size: 0.4em;
+    }
+}
+
+@media(max-width:450px){
+    section.cert .certificates .cert-body .cert-container{
+        height: 150px;
+    }   
+    section.cert .certificates{
+        padding: 0;
+    }
+}

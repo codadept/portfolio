@@ -134,6 +134,7 @@ section.about-home{
 section.about-home .heading{
     margin: 4%;
     position: relative;
+    width: max-content;
 }
 
 section.about-home .heading h1{
@@ -148,16 +149,11 @@ section.about-home .heading .heading-desg{
     border-radius: 50%;
     background-color: #6C63FF;
     position: absolute;
-    left: 45%;
+    right: 0;
     top:0;
     z-index: -1;
 }
 
-@media (max-width:1675px){
-    section.about-home .heading .heading-desg{
-        left: 50%;
-    }
-}
 
 section.about-home .heading h3{
     font-size: 6em;
@@ -246,9 +242,6 @@ section.about-home .content p{
 }
 
 @media(max-width:1400px){
-    section.about-home .heading .heading-desg{
-        left: 65%;
-    }
     section.about-home .content{
         flex-direction: column;
         align-items: center;
@@ -305,8 +298,5 @@ section.about-home .content p{
     }    
     section.about-home .heading{
         font-size: .4em;
-    }
-    section.about-home .heading .heading-desg{
-        left: 70%;
     }
 }
