@@ -32,6 +32,7 @@ section.about .about-content .about-text{
 section.about .heading{
     position: relative;
     margin-bottom: 20px;
+    width: max-content;
 }
 
 section.about .heading h1{
@@ -55,7 +56,7 @@ section.about .heading .desg{
     border-radius: 50%;
     background-color: #6C63FF;
     position: absolute;
-    right: 20%;
+    right: 0;
     top:0;
     z-index: -1;
 }
@@ -124,13 +125,123 @@ section.about .tech .tech-container .tech-name{
         font-size: 0.6em;
     }section.about .heading{
         margin-bottom: 0;
-    }section.about .heading .desg{
-        right: 30%;
     }
 }
 
 @media(max-width:600px){
     section.about .heading{
+        font-size: 0.6em;
+    }
+}
+
+/* Education Section */
+
+section.education{
+    width: 100%;
+}
+
+section.education .heading{
+    position: relative;
+    margin-bottom: 20px;
+    width: max-content;
+}
+
+section.education .heading h1{
+    font-size: 4em;
+    margin-bottom: 40px;
+}
+
+section.education .heading h3{
+    font-size: 5em;
+    -webkit-text-stroke: 1px #6C63FF;
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+section.education .heading .desg{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: #6C63FF;
+    position: absolute;
+    right: 0;
+    top:0;
+    z-index: -1;
+}
+
+section.education .edu-container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 30px;
+}
+
+section.education .edu-container .institutes{
+    display: flex;
+    flex-direction: column;
+}
+
+section.education .edu-container .institutes .inst-container{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    box-shadow: 2px 2px 10px rgb(182, 181, 181);
+    padding: 20px;
+    margin: 20px;
+}
+
+section.education .edu-container .institutes .inst-container .inst-details{
+    width: 80%;
+    font-size: 1.2em;
+    color: rgb(75, 75, 75);
+}
+
+section.education .edu-container .institutes .inst-container .inst-img{
+    width: 20%;
+    padding: 10px;
+    background: #dddddd;
+    box-shadow: 2px 2px 10px rgb(165, 165, 165);
+}
+
+section.education .edu-container .institutes .inst-container .inst-img img{
+    width: 100%;
+    height: 100%;
+}
+
+section.education .edu-container .institutes .inst-container .inst-details a{
+    color: rgb(43, 43, 43);
+}
+
+@media(max-width:1600px){
+    section.education{
+        font-size: smaller;
+    }
+}
+
+@media(max-width:800px){
+    section.education{
+        font-size: 0.7em;
+    }   
+    section.education .edu-container .institutes .inst-container .inst-details{
+        width: 60%;
+    }
+    section.education .edu-container .institutes .inst-container .inst-img{
+        width: 40%;
+    }
+}
+
+@media(max-width:600px){
+    section.education .edu-container .institutes .inst-container{
+        height: 150px;
+        font-size: 0.7em;
+    }
+    section.education .edu-container{
+        padding:0;
+    }
+    section.education .heading{
         font-size: 0.6em;
     }
 }
