@@ -38,12 +38,13 @@ section.achievements-page main h1{
 }
 
 section.achievements-page main h3{
-    font-size: 4em;
+    font-size: 5em;
     -webkit-text-stroke: 1px #6C63FF;
     color: white;
     opacity: 0.5;
     position: absolute;
     top: 20%;
+    left: -10%;
     z-index: -1;
 }
 
@@ -91,6 +92,6 @@ section.achievements-page .achievements-home main p{
 
 @media(max-width:800px){
     section.achievements-page .achievements-home main .heading{
-        font-size: 0.6em;
+        font-size: 0.5em;
     }
 }
