@@ -12,6 +12,7 @@
 * {
   margin: 0;
 }
+
 /*
   Typographic tweaks!
   3. Add accessible line-height
@@ -52,13 +53,33 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+  font-family: "Fira Mono", sans-serif;
 }
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
 /*
   8. Create a root stacking context
 */
 #root,
 #__next {
   isolation: isolate;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
 }
 
 /* 

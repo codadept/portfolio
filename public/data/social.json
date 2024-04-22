@@ -1,0 +1,37 @@
+[
+  {
+    "link": "https://www.github.com/codadept",
+    "icon": "github.svg",
+    "name": "Github"
+  },
+  {
+    "link": "https://www.linkedin.com/in/codadept",
+    "icon": "linkedin.svg",
+    "name": "LinkedIn"
+  },
+  {
+    "link": "mailto:info.pratikmajumdar@gmail.com",
+    "icon": "email.svg",
+    "name": "Email"
+  },
+  {
+    "link": "https://www.facebook.com/itspratikmaj",
+    "icon": "facebook.svg",
+    "name": "Facebook"
+  },
+  {
+    "link": "https://www.instagram.com/itspratikmaj",
+    "icon": "instagram.svg",
+    "name": "Instagram"
+  },
+  {
+    "link": "https://www.x.com/itspratikmaj",
+    "icon": "twitter.svg",
+    "name": "Twitter"
+  },
+  {
+    "link": "https://www.dev.to/codadept",
+    "icon": "dev.svg",
+    "name": "Dev"
+  }
+]

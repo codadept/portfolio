@@ -4,9 +4,12 @@
   z-index: 9999;
 
   .circle {
-    width: 50vw;
-    height: 50vw;
-    background-image: radial-gradient(var(--quaternary-100) 20%, var(--primary-100) 60%);
+    width: 30vw;
+    height: 30vw;
+    background-image: radial-gradient(
+      var(--quaternary-100) 20%,
+      var(--primary-100) 60%
+    );
     opacity: 0.1;
     border-radius: 50%;
     position: absolute;

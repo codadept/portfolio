@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import styles from "./CursorAnimation.module.scss";
 
-const CursorAnimation: React.FC = () => {
+const CursorAnimation = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
