@@ -11,6 +11,7 @@
 */
 * {
   margin: 0;
+  font-family: "Fira Mono", sans-serif;
 }
 
 /*
@@ -53,7 +54,6 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-  font-family: "Fira Mono", sans-serif;
 }
 
 h1,
@@ -90,6 +90,7 @@ a {
   --secondary-100: #f05454ff;
   --tertiary-100: #222831ff;
   --quaternary-100: #e8e8e8ff;
+  --quaternary-030: #e8e8e84d;
 }
 
 @font-face {

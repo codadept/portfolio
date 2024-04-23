@@ -57,9 +57,6 @@ const Home = () => {
     calculateLetterFlip(mouseX, mouseY);
   };
 
-  console.log(letterCenter);
-  console.log(isFlipped);
-
   useEffect(() => {
     if (letterCenter.length !== 9) {
       calculateLetterCenter();
@@ -69,7 +66,10 @@ const Home = () => {
   return (
     <div className={styles["home"]} onMouseMove={handleMouseMove}>
       <section className={styles["left"]}>
-        <Navigation imgSrc="" nav="" />
+        <Navigation
+          imgSrc="/images/self.jpg"
+          nav={["About", "Experience", "Projects"]}
+        />
         <div className={styles["name"]}>
           <h1>
             <a

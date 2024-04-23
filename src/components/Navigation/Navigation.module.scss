@@ -1,1 +1,52 @@
+.nav {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
+  .ring-container {
+    position: absolute;
+    .ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 0.15vw dotted var(--quaternary-030);
+      border-radius: 50%;
+      background-color: var(--primary-100);
+      cursor: pointer;
+
+      &.active {
+        border: 0.15vw dotted var(--quaternary-100);
+      }
+    }
+    .nav-links {
+      display: none;
+      width: 0;
+      position: absolute;
+      background-color: var(--quaternary-100);
+      border-radius: 0 0.5vw 0.5vw 0;
+      cursor: pointer;
+
+      &.hover {
+        display: inline-block;
+        width: auto;
+        transition: all 0.6s;
+      }
+    }
+  }
+
+  .container {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 100;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
