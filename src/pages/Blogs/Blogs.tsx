@@ -1,6 +1,6 @@
 import styles from "./Blogs.module.scss";
 
-const Blogs = () => {
+const Blogs: React.FC = () => {
   return <h1 className={styles["heading"]}>Blogs</h1>;
 };
 

@@ -1,8 +1,8 @@
-import { useState, useRef, MouseEventHandler, useEffect } from "react";
-import { Footer, Navigation } from "../../components";
+import { useState, useRef, useEffect, MouseEventHandler } from "react";
+import { Footer, Navigation, About } from "../../components";
 import styles from "./Home.module.scss";
 
-const Home = () => {
+const Home: React.FC = () => {
   const [letterCenter, setLetterCenter] = useState<{ X: number; Y: number }[]>(
     []
   );
@@ -138,7 +138,9 @@ const Home = () => {
         </div>
         <Footer />
       </section>
-      <section className={styles["right"]}></section>
+      <section className={styles["right"]}>
+        <About />
+      </section>
     </div>
   );
 };

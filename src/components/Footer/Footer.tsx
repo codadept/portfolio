@@ -4,7 +4,7 @@ import type { SocialLink } from "../../global/interfaces/Footer";
 
 import styles from "./Footer.module.scss";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   const [data, setData] = useState<SocialLink[]>([]);
 
   const fetchData = async () => {
