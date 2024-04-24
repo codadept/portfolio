@@ -2,6 +2,18 @@ import { useState, useRef, useEffect, MouseEventHandler } from "react";
 import { Footer, Navigation, About, Experience } from "../../components";
 import styles from "./Home.module.scss";
 
+const nameData = [
+  { content: "P", hoverContent: "c" },
+  { content: "r", hoverContent: "o" },
+  { content: "a", hoverContent: "d" },
+  { content: "t", hoverContent: "a" },
+  { content: "i", hoverContent: "d" },
+  { content: "k", hoverContent: "e" },
+  { content: String.fromCharCode(0xa0), hoverContent: "p" },
+  { content: "M", hoverContent: "t" },
+  { content: ".", hoverContent: "." },
+];
+
 const Home: React.FC = () => {
   const [letterCenter, setLetterCenter] = useState<{ X: number; Y: number }[]>(
     []
@@ -77,61 +89,14 @@ const Home: React.FC = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <span
-                className={isFlipped[0] ? styles["flip"] : ""}
-                data-content="P"
-                data-hover-content="c"
-                ref={(element) => (lettersRef.current[0] = element!)}
-              ></span>
-              <span
-                className={isFlipped[1] ? styles["flip"] : ""}
-                data-content="r"
-                data-hover-content="o"
-                ref={(element) => (lettersRef.current[1] = element!)}
-              ></span>
-              <span
-                className={isFlipped[2] ? styles["flip"] : ""}
-                data-content="a"
-                data-hover-content="d"
-                ref={(element) => (lettersRef.current[2] = element!)}
-              ></span>
-              <span
-                className={isFlipped[3] ? styles["flip"] : ""}
-                data-content="t"
-                data-hover-content="a"
-                ref={(element) => (lettersRef.current[3] = element!)}
-              ></span>
-              <span
-                className={isFlipped[4] ? styles["flip"] : ""}
-                data-content="i"
-                data-hover-content="d"
-                ref={(element) => (lettersRef.current[4] = element!)}
-              ></span>
-              <span
-                className={isFlipped[5] ? styles["flip"] : ""}
-                data-content="k"
-                data-hover-content="e"
-                ref={(element) => (lettersRef.current[5] = element!)}
-              ></span>
-              <span
-                className={isFlipped[6] ? styles["flip"] : ""}
-                data-content="&nbsp;"
-                data-hover-content="p"
-                ref={(element) => (lettersRef.current[6] = element!)}
-              ></span>
-              <span
-                className={isFlipped[7] ? styles["flip"] : ""}
-                data-content="M"
-                data-hover-content="t"
-                ref={(element) => (lettersRef.current[7] = element!)}
-              ></span>
-              <span
-                className={isFlipped[8] ? styles["flip"] : ""}
-                data-content="."
-                data-hover-content="."
-                style={{ marginRight: 0 }}
-                ref={(element) => (lettersRef.current[8] = element!)}
-              ></span>
+              {nameData.map((n, idx) => (
+                <span
+                  className={isFlipped[idx] ? styles["flip"] : ""}
+                  data-content={n.content}
+                  data-hover-content={n.hoverContent}
+                  ref={(element) => (lettersRef.current[idx] = element!)}
+                ></span>
+              ))}
             </a>
           </h1>
           <h4>Software Engineer</h4>
