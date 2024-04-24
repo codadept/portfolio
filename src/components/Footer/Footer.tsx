@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
-import type { SocialLink } from "../../global/interfaces/Footer";
+import type { IFooter } from "../../global/interfaces";
 
 import styles from "./Footer.module.scss";
 
 const Footer: React.FC = () => {
-  const [data, setData] = useState<SocialLink[]>([]);
+  const [data, setData] = useState<IFooter.SocialLink[]>([]);
 
   const fetchData = async () => {
     const socialDataResponse = await fetch("/data/social.json");

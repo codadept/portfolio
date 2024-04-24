@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, MouseEventHandler } from "react";
-import { Footer, Navigation, About } from "../../components";
+import { Footer, Navigation, About, Experience } from "../../components";
 import styles from "./Home.module.scss";
 
 const Home: React.FC = () => {
@@ -140,6 +140,7 @@ const Home: React.FC = () => {
       </section>
       <section className={styles["right"]}>
         <About />
+        <Experience />
       </section>
     </div>
   );
