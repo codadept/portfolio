@@ -4,9 +4,10 @@ import styles from "./Navigation.module.scss";
 type Props = {
   imgSrc: string;
   nav: string[];
+  refObj: React.RefObject<HTMLDivElement>[];
 };
 
-const Navigation: React.FC<Props> = ({ imgSrc, nav }) => {
+const Navigation: React.FC<Props> = ({ imgSrc, nav, refObj }) => {
   const initialArray = Array.from({ length: nav.length }).fill(
     false
   ) as boolean[];
@@ -55,6 +56,9 @@ const Navigation: React.FC<Props> = ({ imgSrc, nav }) => {
             }}
             onMouseEnter={() => handleMouseEnter(idx)}
             onMouseLeave={() => handleMouseLeave(idx)}
+            onClick={() =>
+              refObj[idx].current?.scrollIntoView({ behavior: "smooth" })
+            }
           ></div>
           <span
             key={`${n}-nav-link`}

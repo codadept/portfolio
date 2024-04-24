@@ -1,9 +1,14 @@
+import { forwardRef } from "react";
 import ExperienceCard from "../ExperienceCard/ExperienceCard";
+
 import styles from "./Experience.module.scss";
 
-const Experience: React.FC = () => {
+const Experience: React.ForwardRefRenderFunction<HTMLDivElement> = (
+  _props,
+  ref
+) => {
   return (
-    <article className={styles["exp"]}>
+    <article ref={ref} className={styles["exp"]}>
       <h1>Experience</h1>
       <ExperienceCard
         company="Oracle"
@@ -35,4 +40,6 @@ const Experience: React.FC = () => {
   );
 };
 
-export default Experience;
+const ForwardedRefExperience = forwardRef(Experience);
+
+export default ForwardedRefExperience;

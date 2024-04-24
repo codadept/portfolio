@@ -1,8 +1,10 @@
+import { forwardRef } from "react";
+
 import styles from "./About.module.scss";
 
-const About: React.FC = () => {
+const About: React.ForwardRefRenderFunction<HTMLDivElement> = (_props, ref) => {
   return (
-    <article className={styles["about"]}>
+    <article ref={ref} className={styles["about"]}>
       <h1>About</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim id
@@ -29,4 +31,6 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+const ForwardedRefAbout = forwardRef(About);
+
+export default ForwardedRefAbout;

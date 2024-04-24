@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { useRefs } from "../../global/hooks";
 import {
   Footer,
   Navigation,
@@ -6,6 +7,7 @@ import {
   Experience,
   Project,
 } from "../../components";
+
 import styles from "./Home.module.scss";
 
 const nameData = [
@@ -26,6 +28,7 @@ const Home: React.FC = () => {
   );
   const [isFlipped, setIsFlipped] = useState<boolean[]>([]);
   const lettersRef = useRef<HTMLSpanElement[]>([]);
+  const refObj = useRefs(3);
 
   const calculateLetterCenter = () => {
     lettersRef.current.forEach((ref) => {
@@ -87,6 +90,7 @@ const Home: React.FC = () => {
         <Navigation
           imgSrc="/images/self.jpg"
           nav={["About", "Experience", "Projects"]}
+          refObj={refObj}
         />
         <div className={styles["name"]}>
           <h1>
@@ -101,6 +105,7 @@ const Home: React.FC = () => {
                   data-content={n.content}
                   data-hover-content={n.hoverContent}
                   ref={(element) => (lettersRef.current[idx] = element!)}
+                  key={idx}
                 ></span>
               ))}
             </a>
@@ -110,9 +115,9 @@ const Home: React.FC = () => {
         <Footer />
       </section>
       <section className={styles["right"]}>
-        <About />
-        <Experience />
-        <Project />
+        <About ref={refObj[0]} />
+        <Experience ref={refObj[1]} />
+        <Project ref={refObj[2]} />
       </section>
     </div>
   );

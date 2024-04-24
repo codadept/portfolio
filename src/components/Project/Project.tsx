@@ -1,9 +1,13 @@
+import { forwardRef } from "react";
 import ProjectCard from "../ProjectCard/ProjectCard";
 import styles from "./Project.module.scss";
 
-const Project: React.FC = () => {
+const Project: React.ForwardRefRenderFunction<HTMLDivElement> = (
+  _props,
+  ref
+) => {
   return (
-    <article className={styles["project"]}>
+    <article ref={ref} className={styles["project"]}>
       <h1>Projects</h1>
       <ProjectCard
         description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa ducimus odit fugit aut, repellendus excepturi inventore reiciendis cupiditate mollitia at, magnam velit laborum beatae animi possimus architecto iusto maxime debitis sint aspernatur quam accusamus. Animi laboriosam eaque voluptas facere culpa? Illo fugiat vitae cumque vel voluptatum fuga delectus quos obcaecati."
@@ -50,4 +54,6 @@ const Project: React.FC = () => {
   );
 };
 
-export default Project;
+const ForwardedRefProject = forwardRef(Project);
+
+export default ForwardedRefProject;
