@@ -1,8 +1,16 @@
-import { IExperience } from "../../global/interfaces";
-
 import styles from "./ExperienceCard.module.scss";
 
-const ExperienceCard: React.FC<IExperience.Experience> = ({
+type Props = {
+  startDate: Date;
+  endDate: Date | "present";
+  position: string;
+  company: string;
+  keyPoints: string[];
+  skills: string[];
+  link: string;
+};
+
+const ExperienceCard: React.FC<Props> = ({
   company,
   endDate,
   keyPoints,

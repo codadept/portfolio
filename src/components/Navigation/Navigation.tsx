@@ -1,8 +1,12 @@
 import { useState } from "react";
 import styles from "./Navigation.module.scss";
-import { INavigation } from "../../global/interfaces";
 
-const Navigation: React.FC<INavigation.Navigation> = ({ imgSrc, nav }) => {
+type Props = {
+  imgSrc: string;
+  nav: string[];
+};
+
+const Navigation: React.FC<Props> = ({ imgSrc, nav }) => {
   const initialArray = Array.from({ length: nav.length }).fill(
     false
   ) as boolean[];

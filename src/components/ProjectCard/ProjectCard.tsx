@@ -1,7 +1,14 @@
-import { IProject } from "../../global/interfaces";
 import styles from "./ProjectCard.module.scss";
 
-const ProjectCard: React.FC<IProject.Project> = ({
+type Props = {
+  imageSrc: string;
+  name: string;
+  description: string;
+  skills: string[];
+  link: string;
+};
+
+const ProjectCard: React.FC<Props> = ({
   description,
   imageSrc,
   name,

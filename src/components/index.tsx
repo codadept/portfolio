@@ -6,6 +6,7 @@ import Experience from "./Experience/Experience";
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
 import Project from "./Project/Project";
 import ProjectCard from "./ProjectCard/ProjectCard";
+import Link from "./Link/Link";
 
 export {
   CursorAnimation,
@@ -16,4 +17,5 @@ export {
   ExperienceCard,
   Project,
   ProjectCard,
+  Link,
 };
