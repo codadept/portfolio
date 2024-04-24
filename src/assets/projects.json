@@ -1,0 +1,43 @@
+[
+  {
+    "imageSrc": "/images/self.jpg",
+    "name": "Project 1",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim id dolores vitae, accusantium necessitatibus libero natus repellendus.",
+    "skills": ["TypeScript", "Python", "Java", "AWS"],
+    "link": "https://www.github.com/codadept"
+  },
+  {
+    "imageSrc": "/images/self.jpg",
+    "name": "Project 2",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim id dolores vitae, accusantium necessitatibus libero natus repellendus.",
+    "skills": ["TypeScript", "Python", "Java", "AWS"],
+    "link": "https://www.github.com/codadept"
+  },
+  {
+    "imageSrc": "/images/self.jpg",
+    "name": "Project 3",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim id dolores vitae, accusantium necessitatibus libero natus repellendus.",
+    "skills": [
+      "Typescript",
+      "Git",
+      "Python",
+      "Typescript",
+      "Git",
+      "Python",
+      "Typescript",
+      "Git",
+      "Python",
+      "Typescript",
+      "Git",
+      "Python"
+    ],
+    "link": "https://www.github.com/codadept"
+  },
+  {
+    "imageSrc": "/images/self.jpg",
+    "name": "Project 4",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim id dolores vitae, accusantium necessitatibus libero natus repellendus.",
+    "skills": ["TypeScript", "Python", "Java", "AWS"],
+    "link": "https://www.github.com/codadept"
+  }
+]

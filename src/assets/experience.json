@@ -1,0 +1,28 @@
+[
+  {
+    "startDate": "January, 2024",
+    "endDate": "present",
+    "company": "Oracle",
+    "position": "Project Intern",
+    "keyPoints": [
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat possimus corporis ad suscipit quod modi accusamus qui dicta voluptatem explicabo.",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem.",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem."
+    ],
+    "skills": ["TypeScript", "Python", "Java", "AWS"],
+    "link": "https://www.oracle.com/in/corporate/"
+  },
+  {
+    "startDate": "May, 2023",
+    "endDate": "July, 2023",
+    "company": "Amazon",
+    "position": "Software Development Engineer Intern",
+    "keyPoints": [
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat possimus corporis ad suscipit quod modi accusamus qui dicta voluptatem explicabo.",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem.",
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem."
+    ],
+    "skills": ["TypeScript", "Python", "Java", "AWS"],
+    "link": "https://www.aboutamazon.in/about-us"
+  }
+]

@@ -1,6 +1,8 @@
 import { forwardRef } from "react";
 import ExperienceCard from "../ExperienceCard/ExperienceCard";
 
+import experiences from "../../assets/experience.json";
+
 import styles from "./Experience.module.scss";
 
 const Experience: React.ForwardRefRenderFunction<HTMLDivElement> = (
@@ -10,32 +12,18 @@ const Experience: React.ForwardRefRenderFunction<HTMLDivElement> = (
   return (
     <article ref={ref} className={styles["exp"]}>
       <h1>Experience</h1>
-      <ExperienceCard
-        company="Oracle"
-        endDate={"present"}
-        startDate={new Date("January, 2024")}
-        position="Project Intern"
-        link="https://www.oracle.com/in/corporate/"
-        keyPoints={[
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim id dolores vitae, accusantium necessitatibus libero natus repellendus. Officiis ",
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim id dolores vitae, accusantium necessitatibus libero natus repellendus. Officiis",
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim id dolores vitae, accusantium necessitatibus libero natus repellendus.",
-        ]}
-        skills={["Typescript", "Java", "Python"]}
-      />
-      <ExperienceCard
-        company="Amazon"
-        endDate={new Date("July, 2023")}
-        startDate={new Date("May, 2023")}
-        position="Software Development Engineer Intern"
-        link="https://www.aboutamazon.in/about-us"
-        keyPoints={[
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim id dolores vitae, accusantium necessitatibus libero natus repellendus. Officiis ",
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim id dolores vitae, accusantium necessitatibus libero natus repellendus. Officiis",
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim id dolores vitae, accusantium necessitatibus libero natus repellendus.",
-        ]}
-        skills={["Typescript", "Java", "Python"]}
-      />
+      {experiences.map((e, idx) => (
+        <ExperienceCard
+          company={e.company}
+          endDate={e.endDate === "present" ? "present" : new Date(e.endDate)}
+          startDate={new Date(e.startDate)}
+          position={e.position}
+          link={e.link}
+          keyPoints={e.keyPoints}
+          skills={e.skills}
+          key={idx}
+        />
+      ))}
     </article>
   );
 };
