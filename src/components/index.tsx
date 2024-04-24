@@ -4,6 +4,8 @@ import Footer from "./Footer/Footer";
 import About from "./About/About";
 import Experience from "./Experience/Experience";
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
+import Project from "./Project/Project";
+import ProjectCard from "./ProjectCard/ProjectCard";
 
 export {
   CursorAnimation,
@@ -12,4 +14,6 @@ export {
   About,
   Experience,
   ExperienceCard,
+  Project,
+  ProjectCard,
 };

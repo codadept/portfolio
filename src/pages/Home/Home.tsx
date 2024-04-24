@@ -1,5 +1,11 @@
-import { useState, useRef, useEffect, MouseEventHandler } from "react";
-import { Footer, Navigation, About, Experience } from "../../components";
+import { useState, useRef, useEffect } from "react";
+import {
+  Footer,
+  Navigation,
+  About,
+  Experience,
+  Project,
+} from "../../components";
 import styles from "./Home.module.scss";
 
 const nameData = [
@@ -62,7 +68,7 @@ const Home: React.FC = () => {
     });
   };
 
-  const handleMouseMove: MouseEventHandler<HTMLDivElement> = (event) => {
+  const handleMouseMove: React.MouseEventHandler<HTMLDivElement> = (event) => {
     const mouseX = event.pageX;
     const mouseY = event.pageY;
 
@@ -106,6 +112,7 @@ const Home: React.FC = () => {
       <section className={styles["right"]}>
         <About />
         <Experience />
+        <Project />
       </section>
     </div>
   );
