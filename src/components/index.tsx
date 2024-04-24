@@ -7,6 +7,9 @@ import ExperienceCard from "./ExperienceCard/ExperienceCard";
 import Project from "./Project/Project";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import Link from "./Link/Link";
+import Blog from "./Blog/Blog";
+import BlogCard from "./BlogCard/BlogCard";
+import Remarks from "./Remarks/Remarks";
 
 export {
   CursorAnimation,
@@ -18,4 +21,7 @@ export {
   Project,
   ProjectCard,
   Link,
+  Blog,
+  BlogCard,
+  Remarks,
 };

@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2024-04-10",
+    "imageSrc": "/images/self.jpg",
+    "link": "https://dev.to/codadept",
+    "title": "Blog 1"
+  },
+  {
+    "date": "2024-07-10",
+    "imageSrc": "/images/self.jpg",
+    "link": "https://dev.to/codadept",
+    "title": "Blog 2"
+  }
+]

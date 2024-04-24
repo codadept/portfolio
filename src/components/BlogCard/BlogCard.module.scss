@@ -1,0 +1,44 @@
+.blog-card {
+  display: flex;
+  width: 100%;
+  user-select: none;
+  cursor: pointer;
+  padding: 2vw 1vw;
+  margin-top: 1vw;
+
+  &:hover {
+    box-shadow: 0 15px 35px var(--quaternary-010);
+    background-color: var(--quaternary-010);
+    border-radius: 1vw;
+
+    .right {
+      .title {
+        color: var(--secondary-100);
+      }
+    }
+  }
+
+  .left {
+    width: 20%;
+
+    img {
+      width: 90%;
+      margin: auto;
+    }
+  }
+
+  .right {
+    width: 80%;
+    padding: 0 1vw;
+
+    .time {
+      font-style: italic;
+      margin-bottom: 1vw;
+    }
+
+    .title {
+      font-weight: 900;
+      margin-bottom: 1vw;
+    }
+  }
+}
