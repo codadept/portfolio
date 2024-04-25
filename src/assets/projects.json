@@ -1,0 +1,24 @@
+[
+  {
+    "imageSrc": "/images/projects/portfolio.png",
+    "name": "Portfolio",
+    "description": "Built a modern portfolio website using React (TSX), leveraging the speed of Vite. Designed in Figma and styled with SCSS for a clean and responsive experience. Deployed on Vercel for seamless hosting.",
+    "skills": [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Sass",
+      "Git",
+      "Github",
+      "Vercel"
+    ],
+    "link": "https://www.github.com/codadept/portfolio"
+  },
+  {
+    "imageSrc": "/images/projects/gencp.png",
+    "name": "gencp | Coding Template Generator ",
+    "description": "A Bash script to streamline your coding competition prep. It generates customizable coding templates and the necessary number of files, saving you time and effort during those last-minute scrambles.",
+    "skills": ["Bash"],
+    "link": "https://www.github.com/codadept/gencp"
+  }
+]

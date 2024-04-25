@@ -1,0 +1,60 @@
+.project-card {
+  display: flex;
+  width: 100%;
+  user-select: none;
+  cursor: pointer;
+  padding: 2vw 1vw;
+  margin-top: 1vw;
+
+  &:hover {
+    box-shadow: 0 15px 35px var(--quaternary-010);
+    background-color: var(--quaternary-010);
+    border-radius: 1vw;
+
+    .left {
+      img {
+        border: 0.1vw solid var(--secondary-100);
+      }
+    }
+
+    .right {
+      .project-name {
+        color: var(--secondary-100);
+      }
+    }
+  }
+
+  .left {
+    width: 20%;
+    img {
+      width: 90%;
+      margin: auto;
+    }
+  }
+  .right {
+    width: 80%;
+    padding: 0 1vw;
+
+    .project-name {
+      font-weight: 900;
+      margin-bottom: 1vw;
+    }
+    .project-desc {
+      margin-bottom: 1vw;
+    }
+    .project-skills {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 0.5vw;
+
+      span {
+        padding: 0.2vw 0.8vw;
+        margin: 0 0.6vw 0.4vw 0;
+        border-radius: 1vw;
+        background-color: var(--tertiary-100);
+        color: var(--secondary-100);
+      }
+    }
+  }
+}

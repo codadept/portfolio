@@ -1,87 +1,78 @@
-# Developerfolio 🤩 [![Website](https://img.shields.io/website?down_message=offline&style=for-the-badge&up_message=online&url=https%3A%2F%2Fcodadept.herokuapp.com)](https://codadept.herokuapp.com)
+# Portfolio
 
-### My very own personal website. Basically this is just a résumé. 🤠
+This is the repository for my personal portfolio website, built using React, Vite, and TypeScript. The styling is done using SCSS, and the design was loosely done in Figma.
 
-<br>
+## Table of Contents
 
-[![GitHub issues](https://img.shields.io/github/issues/codadept/developerfolio?style=for-the-badge)](https://github.com/codadept/developerfolio/issues)
-[![GitHub stars](https://img.shields.io/github/stars/codadept/developerfolio?style=for-the-badge)](https://github.com/codadept/developerfolio/stargazers)
-[![GitHub license](https://img.shields.io/github/license/IhorHudkov/homepage?style=for-the-badge)](https://github.com/codadept/developerfolio/blob/master/LICENSE)
+- [About](#about)
+- [Features](#features)
+- [Prerequisite](#prerequisite)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Author](#author)
 
-## Have a look 🧐
+## About
 
-<h2 align="center">
-    <img src="https://github.com/codadept/developerfolio/blob/master/public/gifs/codadept.gif" alt="Developerfolio" width="600px" />
-    <br>
-</h2>
+This portfolio website serves as a showcase of my work, skills, and background. It provides visitors with an overview of who I am, what I do, and the projects I've worked on.
 
-### Checkout my [website](https://codadept.herokuapp.com)
+## Features
 
-## Features 🎊
-- Fully responsive
-- Valid HTML5 & CSS3
-- NodeJS & ExpressJS
+- Responsive design
+- Interactive user interface
+- Sections for About, Experience, Contact Information, Projects and Blogs
 
----
+## Prerequisite
 
-## Getting started 🎉
+Before running this project, ensure that you have Node.js and pnpm installed on your system.
 
-By following the instructions you can get a copy of the project up and running on your local machine for development and testing purposes.
+- [Node.js](https://nodejs.org/) (>= 20.x)
+- [pnpm](https://pnpm.io/) (>= 9.x)
 
-### Prerequisites 📄
+## Installation
 
-Your local machine must have [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which basically comes with [NPM](http://npmjs.com)) installed.
+To run this project locally, follow these steps:
 
-
-```
-node@v14.15.11 or higher
-npm@6.14.11 or higher
-git@2.31.1 or higher
-```
-
----
-
-### Ready to use? 🛠
-
-Open your git bash in the required directory and first clone this repository-
+1. Clone the repository:
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/codadept/developerfolio
+git clone https://github.com/codadept/portfolio.git
 
-# Go into the repository
-$ cd developerfolio
-
-# Remove current origin repository
-$ git remote remove origin
 ```
 
-Then install the dependencies using NPM-
+2. Navigate into the project directory:
 
 ```bash
-# Install dependencies
-$ npm install
-
-# Start development server
-$ npm start
+cd portfolio
 ```
 
-Once your server has started, go to this url `http://localhost:3000/` and you will see the website running on a Development Server:
+3. Install dependencies:
 
----
+```bash
+pnpm install
+```
 
-## Technologies used ⚙
+## Usage
 
-- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/html.svg" alt="html" width="25px"> HTML5
-- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/css.svg" alt="css" width="25px"> CSS3
-- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/javascript.svg" alt="js" width="25px"> JavaScript
-- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/nodejs.svg" alt="nodejs" width="25px"> Node.js
-- <img src="https://github.com/codadept/developerfolio/blob/master/public/img/icons/expressjs.svg" alt="expressjs" width="25px"> Express.js
+To start the development server, run:
 
-## Authors 👨
+```bash
+pnpm start
+```
 
-- Pratik Majumdar (codadept) - https://github.com/codadept
+This will start the development server at `http://localhost:3000`.
 
-## Acknowledgments 😃
+## Contributing
 
-I was motivated to make my portfolio website as I wanted to showcase what I have learnt in Web Development.
+No contributions are being accepted at this time. This project is solely maintained by the author.
+
+## License
+
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
+
+## Author
+
+This project was created by [Pratik Majumdar (codadept)](https://github.com/codadept).
+
+[![GitHub followers](https://img.shields.io/github/followers/codadept.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/codadept?tab=followers)

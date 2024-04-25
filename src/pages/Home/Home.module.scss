@@ -1,0 +1,58 @@
+.home {
+  width: 100%;
+  display: flex;
+
+  .left {
+    width: 30%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: var(--primary-100);
+
+    .name {
+      color: var(--quaternary-100);
+      user-select: none;
+
+      h1 {
+        font-size: 3vw;
+        padding-left: 3vw;
+        a {
+          cursor: pointer;
+          span {
+            display: inline-block;
+            transition: transform 0.3s ease;
+
+            &.flip {
+              transform: rotateY(360deg);
+            }
+
+            &::before {
+              content: attr(data-content);
+            }
+
+            &.flip::before {
+              content: attr(data-hover-content);
+              color: var(--secondary-100);
+            }
+          }
+        }
+      }
+
+      h4 {
+        font-size: 1.2vw;
+        padding-left: 3vw;
+      }
+    }
+  }
+
+  .right {
+    width: 70%;
+    overflow-y: auto;
+    position: absolute;
+    min-height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-100);
+  }
+}

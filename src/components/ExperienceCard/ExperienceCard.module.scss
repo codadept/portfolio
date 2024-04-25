@@ -1,0 +1,69 @@
+.experience-card {
+  display: flex;
+  width: 100%;
+  user-select: none;
+  cursor: pointer;
+  padding: 2vw 1vw;
+  margin-top: 1vw;
+
+  &:hover {
+    box-shadow: 0 15px 35px var(--quaternary-010);
+    background-color: var(--quaternary-010);
+    border-radius: 1vw;
+
+    .right {
+      .experience {
+        color: var(--secondary-100);
+      }
+    }
+  }
+
+  .left {
+    width: 20%;
+
+    .duration {
+      span {
+        display: inline-block;
+        text-wrap: nowrap;
+        padding: 0.2vw 1vw;
+        border-radius: 0.9vw;
+        margin-bottom: 0.5vw;
+        background-color: var(--tertiary-100);
+      }
+    }
+  }
+
+  .right {
+    width: 80%;
+    padding: 0 1vw;
+
+    .experience {
+      font-weight: 900;
+      margin-bottom: 1vw;
+    }
+
+    .experience-desc {
+      margin-bottom: 1vw;
+      ul {
+        li::marker {
+          color: var(--secondary-100);
+        }
+      }
+    }
+
+    .experience-skills {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 0.5vw;
+
+      span {
+        padding: 0.2vw 0.8vw;
+        margin: 0 0.6vw 0.4vw 0;
+        border-radius: 1vw;
+        background-color: var(--tertiary-100);
+        color: var(--secondary-100);
+      }
+    }
+  }
+}
