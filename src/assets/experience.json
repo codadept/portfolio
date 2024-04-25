@@ -5,11 +5,22 @@
     "company": "Oracle",
     "position": "Project Intern",
     "keyPoints": [
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat possimus corporis ad suscipit quod modi accusamus qui dicta voluptatem explicabo.",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem.",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem."
+      "Learning about the product, which is a Diameter Message Router for a 4G LTE network using Oracle technologies. This project involved in-depth knowledge of Diameter messages, including their structure and functionality within the network architecture (HSS, MME).",
+      "Utilized Wireshark for packet capture and analysis to effectively debug Diameter messages. Leveraged Seagull Traffic Generation Tool for comprehensive testing and validation of the routing agent's functionality.",
+      "Expanded knowledge of Docker, Kubernetes, Helm Charts, and Prometheus Adaptor through their application in deploying the Diameter Router.",
+      "Employed the behave framework in Python to implement behavioral driven development (BDD) for the routing agent. "
     ],
-    "skills": ["TypeScript", "Python", "Java", "AWS"],
+    "skills": [
+      "Python",
+      "Python-Behave",
+      "Kubernetes",
+      "Docker",
+      "Helm Charts",
+      "Java",
+      "Prometheus Adaptor",
+      "Seagull",
+      "Wireshark"
+    ],
     "link": "https://www.oracle.com/in/corporate/"
   },
   {
@@ -18,11 +29,20 @@
     "company": "Amazon",
     "position": "Software Development Engineer Intern",
     "keyPoints": [
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat possimus corporis ad suscipit quod modi accusamus qui dicta voluptatem explicabo.",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem.",
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, autem."
+      "Understood the architecture of the existing product at Amazon and implemented enhancements to onboard five new services, significantly expanding its capabilities.",
+      "Led the migration of over two deprecated services, ensuring seamless transition and uninterrupted functionality of critical components.",
+      "Planned and implemented of an automation project aimed at streamlining the evidence filing process for over 3800 applications, reducing SDE hours by at least 100 annually. Utilized Selenium with Python to automate documentation processes, including capturing screenshots of various dashboards and consoles.",
+      "Got to learn various AWS services including CloudWatch, SNS, SQS, Lambda, S3, CloudFormation, EC2, and DynamoDB. Developed enhancements for Lambda functions in Python and AWS CDK code in TypeScript."
     ],
-    "skills": ["TypeScript", "Python", "Java", "AWS"],
+    "skills": [
+      "Python",
+      "TypeScript",
+      "Java",
+      "Selenium",
+      "AWS",
+      "AWS-CDK",
+      "Pytest"
+    ],
     "link": "https://www.aboutamazon.in/about-us"
   }
 ]

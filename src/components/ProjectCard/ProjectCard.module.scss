@@ -11,6 +11,12 @@
     background-color: var(--quaternary-010);
     border-radius: 1vw;
 
+    .left {
+      img {
+        border: 0.1vw solid var(--secondary-100);
+      }
+    }
+
     .right {
       .project-name {
         color: var(--secondary-100);

@@ -6,7 +6,7 @@ import {
   About,
   Experience,
   Project,
-  Blog,
+  // Blog,
   Remarks,
 } from "../../components";
 
@@ -30,7 +30,7 @@ const Home: React.FC = () => {
   );
   const [isFlipped, setIsFlipped] = useState<boolean[]>([]);
   const lettersRef = useRef<HTMLSpanElement[]>([]);
-  const refObj = useRefs(4);
+  const refObj = useRefs(3);
 
   const calculateLetterCenter = () => {
     lettersRef.current.forEach((ref) => {
@@ -91,7 +91,7 @@ const Home: React.FC = () => {
       <section className={styles["left"]}>
         <Navigation
           imgSrc="/images/self.jpg"
-          nav={["About", "Experience", "Projects", "Blogs"]}
+          nav={["About", "Experience", "Projects"]}
           refObj={refObj}
         />
         <div className={styles["name"]}>
@@ -120,7 +120,7 @@ const Home: React.FC = () => {
         <About ref={refObj[0]} />
         <Experience ref={refObj[1]} />
         <Project ref={refObj[2]} />
-        <Blog ref={refObj[3]} />
+        {/* <Blog ref={refObj[3]} /> */}
         <Remarks />
       </section>
     </div>

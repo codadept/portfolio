@@ -1,4 +1,4 @@
-import Link from "../Link/Link";
+import { Link } from "../../components";
 
 import styles from "./Remarks.module.scss";
 
