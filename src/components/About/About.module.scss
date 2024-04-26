@@ -14,3 +14,12 @@
     user-select: none;
   }
 }
+
+@media (max-width: 1024px) {
+  .about {
+    font-size: 1.5vw;
+    h1 {
+      font-size: 3vw;
+    }
+  }
+}

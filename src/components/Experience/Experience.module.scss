@@ -9,3 +9,12 @@
     font-size: 2vw;
   }
 }
+
+@media (max-width: 1024px) {
+  .exp {
+    font-size: 1.5vw;
+    h1 {
+      font-size: 3vw;
+    }
+  }
+}
