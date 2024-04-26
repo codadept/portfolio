@@ -1,19 +1,47 @@
-import { forwardRef } from "react";
+import { forwardRef, useState, useEffect } from "react";
 import { Link } from "../../components";
 
 import styles from "./About.module.scss";
 
 const About: React.ForwardRefRenderFunction<HTMLDivElement> = (_props, ref) => {
-  return (
-    <article ref={ref} className={styles["about"]}>
-      <h1>About</h1>
-      <p>
-        As a Computer Science and Engineering graduate from the National
-        Institute of Technology Silchar, my journey has been defined by a
-        passion for exploring diverse fields of CS. From delving into Software
-        Development, System Programming, to Operating Systems and Computer
-        Networks, I've embraced a multidisciplinary approach to learning.
-      </p>
+  const [showFullContent, setShowFullContent] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 640);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const toggleContent = () => {
+    setShowFullContent(!showFullContent);
+  };
+
+  const initialParagraph = (
+    <p>
+      As a Computer Science and Engineering graduate from the National Institute
+      of Technology Silchar, my journey has been defined by a passion for
+      exploring diverse fields of CS. From delving into Software Development,
+      System Programming, to Operating Systems and Computer Networks, I've
+      embraced a multidisciplinary approach to learning.{" "}
+      {isMobile && !showFullContent && (
+        <span onClick={toggleContent} className={styles["read-more"]}>
+          Read more...
+        </span>
+      )}
+    </p>
+  );
+
+  const expandedParagraphs = (
+    <>
       <p>
         My focus on Software Development led me to delve into both Frontend and
         Backend technologies, resulting in tangible projects such as a Blogs
@@ -46,6 +74,28 @@ const About: React.ForwardRefRenderFunction<HTMLDivElement> = (_props, ref) => {
         processes, further enhancing my skills and understanding of industry
         practices.
       </p>
+    </>
+  );
+
+  return (
+    <article ref={ref} className={styles["about"]}>
+      <h1>About</h1>
+      {isMobile ? (
+        <>
+          {initialParagraph}
+          {showFullContent && expandedParagraphs}
+          {isMobile && showFullContent && (
+            <span onClick={toggleContent} className={styles["read-less"]}>
+              Read less...
+            </span>
+          )}
+        </>
+      ) : (
+        <>
+          {initialParagraph}
+          {expandedParagraphs}
+        </>
+      )}
     </article>
   );
 };

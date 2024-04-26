@@ -42,3 +42,14 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .footer {
+    width: 60%;
+
+    .icon-container {
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+}
