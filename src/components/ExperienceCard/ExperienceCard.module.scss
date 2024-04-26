@@ -67,3 +67,18 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .experience-card {
+    flex-direction: column;
+    margin-top: 4vw;
+
+    .left {
+      width: 100%;
+    }
+
+    .right {
+      width: 100%;
+    }
+  }
+}

@@ -9,3 +9,21 @@
     font-size: 2vw;
   }
 }
+
+@media (max-width: 1024px) {
+  .project {
+    font-size: 1.5vw;
+    h1 {
+      font-size: 3vw;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .project {
+    font-size: 3vw;
+    h1 {
+      font-size: 5vw;
+    }
+  }
+}

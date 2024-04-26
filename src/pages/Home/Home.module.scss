@@ -56,3 +56,64 @@
     background-color: var(--primary-100);
   }
 }
+
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+
+    .left {
+      position: static;
+      width: 100%;
+      height: auto;
+
+      .name {
+        margin: 2vw 2vw 0 2vw;
+        h1 {
+          font-size: 7vw;
+          a {
+            span {
+              &.flip {
+                transform: none;
+              }
+
+              &::before {
+                content: attr(data-content);
+              }
+
+              &.flip::before {
+                content: attr(data-content);
+                color: inherit;
+              }
+            }
+          }
+        }
+
+        h4 {
+          font-size: 3vw;
+        }
+      }
+    }
+
+    .right {
+      position: static;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .home {
+    .left {
+      .name {
+        h1 {
+          font-size: 10vw;
+        }
+
+        h4 {
+          font-size: 5vw;
+        }
+      }
+    }
+  }
+}

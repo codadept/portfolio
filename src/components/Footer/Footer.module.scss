@@ -29,3 +29,27 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .footer {
+    position: static;
+    margin: 2vw 2vw 0 2vw;
+    width: 40%;
+
+    .icon-container {
+      width: 3vw;
+      height: 3vw;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    width: 60%;
+
+    .icon-container {
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+}

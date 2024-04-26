@@ -58,3 +58,21 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .project-card {
+    flex-direction: column-reverse;
+    margin-top: 4vw;
+
+    .left {
+      width: 100%;
+      img {
+        width: 70%;
+      }
+    }
+
+    .right {
+      width: 100%;
+    }
+  }
+}
