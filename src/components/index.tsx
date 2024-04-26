@@ -10,6 +10,7 @@ import Link from "./Link/Link";
 import Blog from "./Blog/Blog";
 import BlogCard from "./BlogCard/BlogCard";
 import Remarks from "./Remarks/Remarks";
+import Loader from "./Loader/Loader";
 
 export {
   CursorAnimation,
@@ -24,4 +25,5 @@ export {
   Blog,
   BlogCard,
   Remarks,
+  Loader,
 };
