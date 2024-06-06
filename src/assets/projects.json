@@ -1,5 +1,12 @@
 [
   {
+    "imageSrc": "/images/projects/schdl.png",
+    "name": "schdl | An Interactive Terminal Task Scheduler Made in Golang",
+    "description": "Schdl is a terminal-based task scheduler written in Golang. It allows users to manage their tasks efficiently by storing tasks along with their due date and time. Users can create, delete, update, and retrieve tasks using an interactive interface. Github Actions are used to create automated releases whenever new tags are pushed.",
+    "skills": ["Go", "Github Actions"],
+    "link": "https://www.github.com/codadept/schdl"
+  },
+  {
     "imageSrc": "/images/projects/portfolio.png",
     "name": "Portfolio",
     "description": "Built a modern portfolio website using React (TSX), leveraging the speed of Vite. Designed in Figma and styled with SCSS for a clean and responsive experience. Deployed on Vercel for seamless hosting.",
