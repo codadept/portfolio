@@ -90,7 +90,7 @@ const Home: React.FC = () => {
     <div className={styles["home"]} onMouseMove={handleMouseMove}>
       <section className={styles["left"]}>
         <Navigation
-          imgSrc="/images/self.jpg"
+          imgSrc="/images/self.png"
           nav={["About", "Experience", "Projects"]}
           refObj={refObj}
         />
